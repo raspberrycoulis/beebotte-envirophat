@@ -21,6 +21,7 @@ You'll need to install the relevant Beebotte files, which is done by:
 
 Simply clone this script by running:
 
+    cd ~
     sudo git clone https://github.com/raspberrycoulis/beebotte-envirophat.git
 
 You'll need to make some changes first, specifically inserting your API and Secret keys (found via Beebotte) in the following place:
@@ -57,7 +58,7 @@ This is what will tell the Pi to run your script on boot:
 
     sudo nano /lib/systemd/system/sense.service
 
-Then add the following text to your file:
+Then add the following text to your file (you may need to adjust the path for your `sense.py` script depending on where it is located (the part `/home/pi/sense.py`):
 
     [Unit]
     Description=The Enviro pHAT Sense via Beebotte service
