@@ -46,7 +46,7 @@ And then finally test it by running:
 
     ./sense.py
 
-If done correctly, you should see printouts in the command line of the temperature, light levels and pressure readings.
+If done correctly, you should see printouts in the command line of the temperature, light levels and pressure readings. Stop the script by pressing `ctrl + c`.
 
 ## Making the script run automatically on boot
 
