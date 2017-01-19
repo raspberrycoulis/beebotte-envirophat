@@ -24,10 +24,10 @@ Simply clone this script by running:
     cd ~
     sudo git clone https://github.com/raspberrycoulis/beebotte-envirophat.git
 
-You'll need to make some changes first, specifically inserting your API and Secret keys (found via Beebotte) in the following place:
+You'll need to make some changes first, specifically inserting your Channel Key (found via Beebotte) in the following place:
 
-    ### Replace API_KEY and SECRET_KEY with those of your account
-    bbt = BBT('API_KEY', 'SECRET_KEY')
+    ### Replace CHANNEL_KEY with that of your channel
+    bbt = BBT(token = 'CHANNEL_KEY')
 
 You can use your preferred text editor, but Nano works just fine:
 
