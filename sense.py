@@ -4,8 +4,8 @@ import time
 from envirophat import light, weather
 from beebotte import *
 
-### Replace API_KEY and SECRET_KEY with those of your account
-bbt = BBT('API_KEY', 'SECRET_KEY')
+### Replace CHANNEL_TOKEN with that of your channel
+bbt = BBT(token = 'CHANNEL_TOKEN')
 
 period = 300 ## Sensor data reporting period (5 minutes)
 
@@ -37,5 +37,3 @@ def run():
     time.sleep( period )
 
 run()
-
-
