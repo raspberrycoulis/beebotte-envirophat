@@ -17,7 +17,7 @@ light_resource = Resource(bbt, 'Enviro_pHAT', 'light')
 def run():
   while True:
     ### Assume - the '-9' is a temperature calibration to take the Pi's heat into consideration. Adjust if needed.
-    temperature, pressure, lux = weather.temperature() -9, weather.pressure(), light.light()
+    temperature, pressure, lux = weather.temperature() -9, weather.pressure()/100, light.light()
     if temperature is not None and pressure is not None and lux is not None:
         print ("Temp={0:.1f}*C   Pressure={1:.0f} hPa   Light={2:.0f} lux".format(temperature, pressure, lux))
         try:
